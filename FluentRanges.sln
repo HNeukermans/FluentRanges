@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentRanges.Tests", "Fluen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NugetPackageDemo.FluentRanges", "NugetPackageDemo.FluentRanges\NugetPackageDemo.FluentRanges.csproj", "{66C99FB2-1657-48CC-BDCE-D0322790E8EB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{E3CEBEEE-56F2-4E72-8E4C-DBB2ACEB93FB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
