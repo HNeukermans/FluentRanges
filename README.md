@@ -1,2 +1,2 @@
 # FluentRanges
-Library for all sorts of range like numerics, date and other value types.
+Library for all sorts of ranges like numerics, date and other value types.
