@@ -3,9 +3,11 @@ Library for all sorts of ranges like numerics, dates and other value types.
 
 ## Why FluentRanges?
 FluentRanges helps in code-modeling business rules like:
-when patients whose ages ranges from 13 to 25 years then do ...
-when an event occurs between now and 2 days later then do ...
-when the amount of an invoice is 1000 with 5 as error margin then do ...
+ - when patients whose ages ranges from 13 to 25 years then do ...
+ - when an event occurs between now and 2 days later then do ...
+ - when the amount of an invoice is 1000 with 5 as error margin then do ...
+Often these rules are written procedural using arithmetic operators and so become excluded form a code model.
+FluentRanges offers classes and extension methods to make this easier to read and more intuitive 
 
 ## What is FluentRanges?
 FluentRanges contains classes and convenient extensions methods that make creating and working with ranges easy.
@@ -53,7 +55,7 @@ var i = new IntRange(5,16)
 var d = ne IntRange(5,16);
 
 
-### ToString()
+### override ToString()
 Console.WriteLine(new IntRange(5,16).ToString()) /* ==> "Lower:5, Upper:16, Width:11" */
 
 
