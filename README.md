@@ -21,7 +21,7 @@ FluentRanges contains set of **rich-behavior** classes and convenient extensions
 ### How do I use it?
 
 #### IsBetween/HappenedDuring
-FluentRanges offers convenient extension methods for integers, doubles, datetime(offset) to code against ranges.
+FluentRanges offers convenient extension methods for integers, doubles, datetime(offset) to code against ranges **fluently**.
 ```
 if(age.IsBetween(new IntRange(13,25)) then {}
 if(invoiceAmount.IsBetween(new IntRange(1000-5,1000+5)) then {}
@@ -44,8 +44,8 @@ var i = new IntRange(5,16).Offset(2)  /* i == new IntRange(7,18) */
 var d = new DateTimeRange(DateTime.Now, DateTime.Now.AddDays(1)).Offset(TimeSpan.FromDays(1)) /* d == new DateTimeRange(DateTime.Now.AddDays(1), DateTime.Now.AddDays(2)) */
 ```
 #### Ranges are immutable
-```
 The limits of any range instance can not be changed. Methods like Offset, SetLower, SetUpper all return new Range instances
+```
 var i = new IntRange(5,16)
 d = i.Offset(2) /* the limits of i have not been ofsetted.*/
 ```
@@ -69,15 +69,18 @@ var d = ne IntRange(5,16);
 Console.WriteLine(new IntRange(5,16).ToString()) /* ==> "Lower:5, Upper:16, Width:11" */
 ```
 
-### IsLesserThen/HappenedBefore
-if(age.IsLesserThen(new IntRange(13,25)) then {}   /* age < 13 */
-if(eventDate.HappenedBefore(new DateTimeRange(DateTime.Now, DateTime.Now.AddDays(2)) then {} /* eventDate < DateTime.Now */
+### HappenedBefore/HappenedAfter
+In scenarios where you want to know if a given date happened before or after the period defined by the daterange 
+```
+if(eventDate.HappenedBefore(DateTimeRange.StartsAt(DateTime.Now, TimeSpan.FromDays(1)) then {} /* eventDate < DateTime.Now */
+if(eventDate.HappenedAfter(DateTimeRange.StartsAt(DateTime.Now, TimeSpan.FromDays(1)) then {} /* eventDate > DateTime.Now.AddDays(1) */
 if(invoiceAmount.IsLesserThen(new IntRange(1000-5,1000+5)) then {} /* invoiceAmount < 1000-5 */
-
-### IsGreater/HappenedAfter
+```
+### IsLesser/IsGreater
+```
+if(age.IsLesserThen(new IntRange(13,25)) then {}   /* age < 13 */
 if(age.IsGreaterThen(new IntRange(13,25)) then {}   /* age > 25 */
-if(eventDate.HappenedAfter(new DateTimeRange(DateTime.Now, DateTime.Now.AddDays(2)) then {} /* eventDate < DateTime.Now */
-if(invoiceAmount.IsGreater(new IntRange(1000-5,1000+5)) then {} /* invoiceAmount > 1000+5 */
+```
 
  
  
