@@ -8,8 +8,7 @@ Offers a code model for representing a 1-dimensional area between 2 limits.
   **'x is between'**  
   **'x happened during a period'** 
 * Compute **intersections** between two or more 1-dimensional scalar areas.   
-* *Rich behavior* classes that allow ranges to **sort, compare, offset, inflate**
-* Compute **left|right adjacency** between two or more 1-dimensional scalar areas.
+* *Rich behavior* classes that allow **sorting, comparing, offset, inflate**
 	
 ## What is FluentRanges?
 FluentRanges contains set of **rich-behavior** classes and convenient extensions methods that make creating and working with ranges easy.
