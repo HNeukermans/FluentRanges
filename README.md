@@ -1,16 +1,14 @@
 # FluentRanges
 Library for all sorts of ranges like numerics, dates and other value types.
+A range behave as an immutable object that represents a 1-dimensional scalar area between 2 limits. 
 
 ## Why FluentRanges?
-Write *'x is between'* rules fluently.
-Write *'x happened during a period'* rules fluently.
-Helps in computing **intersections** between two or more 1-dimensional areas. 
-Helps  when  then do 
-  when or the computation intersection
-A range represents an 1 dim-area or extend between 2 limits. The width/durarion of the range is the difference between both limits.
-FluentRanges can help in code-modeling scalar business rules like:
-	- when a number/date is in between a range/period then do ...
-    - when two areas on scale intersect then do ...
+Write *'x is between'* rules fluently.   
+Write *'x happened during a period'* rules fluently.  
+Compute **intersections** between two or more 1-dimensional scalar areas.   
+Compute **left|right adjacency** between two or more 1-dimensional scalar areas.
+Helps in modeling and programming against 1-dimensional scalar areas. Offers methods like Offset, Inflate,
+
 	
 ## What is FluentRanges?
 FluentRanges contains classes and convenient extensions methods that make creating and working with ranges easy.
