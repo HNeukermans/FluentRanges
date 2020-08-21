@@ -1,6 +1,6 @@
 # FluentRanges
 Library for all sorts of ranges like numerics, dates and other value types.  
-A range represents a 1-dimensional area between 2 limits. 
+
 
 ## Why FluentRanges?
 Offers a code model for representing a 1-dimensional area between 2 limits. 
